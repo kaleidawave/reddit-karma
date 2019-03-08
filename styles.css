@@ -1,0 +1,51 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 80%;
+    margin: 36px auto;
+    max-width: 620px;
+}
+
+form.form {
+    display: flex;
+    border: 3px solid black;
+    align-items: center;
+    padding: 2px 8px;
+}
+
+form.form>input {
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    margin-left: 6px;
+}
+
+form.form>button {
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+#info {
+    position: absolute;
+    bottom: 36px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.spin {
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
