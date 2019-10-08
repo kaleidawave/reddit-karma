@@ -15,7 +15,7 @@ async function getKarma(event) {
     event.preventDefault();
     document.getElementById('score').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading';
     let input = document.getElementById('username').value;
-    let username = input.includes('www.reddit.com/user/') ? urlToUser(input) : input;
+    let username = input.includes('reddit.com/user/') ? urlToUser(input) : input;
     const response = await fetch(`https://www.reddit.com/user/${username}.json?sort=top&limit=100`);
     if (response.ok) {
         const json = await response.json();
